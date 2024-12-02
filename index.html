@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayceMenu</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/ICO/playce.jfif" type="image/x-icon">
+</head>
+<body>
+    
+    <header>
+       
+    </header>
+
+    <main>
+      
+        <div id="menu">
+            <h1>PlayceMenu</h1>
+            <div id="menu-controls">
+                <input type="text" id="search-bar" placeholder="Поиск...">
+                <select id="category-filter">
+                    <option value="all">Все</option>
+                    <option value="pizza">Пицца</option>
+                    <option value="pasta">Паста</option>
+                    <option value="salad">Салаты</option>
+                </select>
+            </div>
+            <div class="menu-item" data-category="pizza">
+                <div class="menu-img-wrapper">
+                    <img src="img/Горячая лапша/cupnoodles_sweet_chili.png" alt="Пицца">
+                </div>
+                <h4>Пицца</h4>
+                <p>Вкусная пицца с сыром и томатами.</p>
+                <span class="price">300 руб.</span>
+                <div class="menu-actions">
+                    <button class="add-to-cart" data-price="300" data-name="Пицца">Добавить<span class="item-count" data-name="Пицца"></span></button>
+                    
+                    <button class="remove-from-cart" data-price="300" data-name="Пицца">Убрать</button>
+                </div>
+            </div>
+            <div class="menu-item" data-category="pasta">
+                <div class="menu-img-wrapper">
+                    <img src="img/Горячая лапша/cupnoodles_sweet_chili.png" alt="Пицца">
+                </div>
+                <h4>Паста</h4>
+                <p>Итальянская паста с соусом болоньезе.</p>
+                <span class="price">200 руб.</span>
+                <div class="menu-actions">
+                    <button class="add-to-cart" data-price="200" data-name="Паста">Добавить <span class="item-count" data-name="Паста"></span></button>
+                   
+                    <button class="remove-from-cart" data-price="200" data-name="Паста">Убрать</button>
+                </div>
+            </div>
+            <div class="menu-item" data-category="salad">
+                <div class="menu-img-wrapper">
+                    <img src="img/Горячая лапша/cupnoodles_sweet_chili.png" alt="Пицца">
+                </div>
+                <h4>Салат</h4>
+                <p>Свежий салат с овощами и зеленью.</p>
+                <span class="price">150 руб.</span>
+                <div class="menu-actions">
+                    <button class="add-to-cart" data-price="150" data-name="Салат">Добавить<span class="item-count" data-name="Салат"></span></button>
+                    
+                    <button class="remove-from-cart" data-price="150" data-name="Салат">Убрать</button>
+                </div>
+            </div>
+            <div class="menu-item" data-category="salad">
+                <div class="menu-img-wrapper">
+                    <img src="img/Горячая лапша/cupnoodles_sweet_chili.png" alt="Пицца">
+                </div>
+                <h4>Салат</h4>
+                <p>Свежий салат с овощами и зеленью.</p>
+                <span class="price">150 руб.</span>
+                <div class="menu-actions">
+                    <button class="add-to-cart" data-price="150" data-name="Напитки">Добавить<span class="item-count" data-name="Напитки"></span></button>
+                    
+                    <button class="remove-from-cart" data-price="150" data-name="Напитки">Убрать</button>
+                </div>
+            </div>
+            <div class="menu-item" data-category="salad">
+                <div class="menu-img-wrapper">
+                    <img src="img/Горячая лапша/cupnoodles_sweet_chili.png" alt="Пицца">
+                </div>
+                <h4>Салат</h4>
+                <p>Свежий салат с овощами и зеленью.</p>
+                <span class="price">150 руб.</span>
+                <div class="menu-actions">
+                    <button class="add-to-cart" data-price="150" data-name="Горячее">Добавить<span class="item-count" data-name="Горячее"></span></button>
+                    
+                    <button class="remove-from-cart" data-price="150" data-name="Горячее">Убрать</button>
+                </div>
+            </div>
+            <div class="menu-item" data-category="salad">
+                <div class="menu-img-wrapper">
+                    <img src="img/Горячая лапша/cupnoodles_sweet_chili.png" alt="Пицца">
+                </div>
+                <h4>Салат</h4>
+                <p>Свежий салат с овощами и зеленью.</p>
+                <span class="price">150 руб.</span>
+                <div class="menu-actions">
+                    <button class="add-to-cart" data-price="150" data-name="Сладкое">Добавить<span class="item-count" data-name="Сладкое"></span></button>
+                    
+                    <button class="remove-from-cart" data-price="150" data-name="Сладкое">Убрать</button>
+                </div>
+            </div>
+        </div>
+        
+            
+
+                    
+            <button id="cart-icon">Корзина</button>
+
+        <section id="cart-container">
+            <h2>Корзина</h2>
+            <ul id="cart-list">
+                <!-- Товары добавляются динамически -->
+            </ul>
+            <strong>Общая стоимость:</strong> <span id="total-cost">0 руб.</span>
+            <button id="submit-order">Отправить заказ</button>
+        </section>
+        
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
