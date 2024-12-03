@@ -1,3 +1,60 @@
+
+/* Убираем возможность зума */
+@media all {
+    body {
+        -ms-overflow-style: none;  /* Убираем полосы прокрутки для IE */
+        overscroll-behavior: contain;
+    }
+}
+/* Метатег для отключения зума добавьте в <head> вашего HTML */
+
+/* Адаптивные стили для различных экранов */
+@media (max-width: 1200px) {
+    #site-container {
+        width: 95%;
+    }
+
+    .menu-item {
+        flex: 0 1 calc(33.333% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-controls {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #site-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu-item {
+        flex: 0 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    #site-container {
+        padding: 5px;
+    }
+
+    .menu-item {
+        flex: 0 1 100%;
+        margin-bottom: 10px;
+    }
+
+    #search-bar, #category-filter {
+        font-size: 12px;
+    }
+}
+
+/* Убираем горизонтальную прокрутку и задаём перенос строк */
+body {
+    overflow-x: hidden;
+    white-space: normal;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
