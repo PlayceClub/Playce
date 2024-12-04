@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         const botToken = "7978127151:AAEiJVWSEmrXn6pj26O3C8HrSNVmKZYKyDA"; // Укажите токен вашего бота
-        const chatId = "1776219693"; // Укажите ID чата
+        const chatId = "-1002380518129"; // Укажите ID чата
 
         // Формируем сообщение
         let message = `🛒 Новый заказ стола: 20\n`;
